@@ -1,0 +1,4 @@
+
+server:
+	./artisan serve
+
