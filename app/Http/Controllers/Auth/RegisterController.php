@@ -10,15 +10,16 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 class RegisterController extends Controller
 {
     /*
-    |--------------------------------------------------------------------------
-    | Register Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller handles the registration of new users as well as their
-    | validation and creation. By default this controller uses a trait to
-    | provide this functionality without requiring any additional code.
-    |
-    */
+     * ユーザの登録処理を行うコントローラ。
+     *
+     * - showRegistrationForm メソッドで表示する画面を決定する。
+     * - register メソッドで登録処理を行う。
+     *
+     * これらはtraitに実装がある。
+     *
+     * @see RegistersUsers::showRegistrationForm()
+     * @see RegistersUsers::register()
+     */
 
     use RegistersUsers;
 
