@@ -14,6 +14,9 @@ class RegisterController extends Controller
      *
      * - showRegistrationForm メソッドで表示する画面を決定する。
      * - register メソッドで登録処理を行う。
+     *      - register はバリデーション、イベント発行、リダイレクトなどの処理が逐次的に書かれている
+     *      - ユーザ登録処理の本体は $this->create に移譲している
+     *          - これを宣言していないのが気持ち悪い
      *
      * これらはtraitに実装がある。
      *
