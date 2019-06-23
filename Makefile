@@ -2,6 +2,9 @@
 server:
 	./artisan serve
 
+test:
+	./vendor/bin/phpunit
+
 DB_CONTAINER_NAME = tpfc-db
 
 db:
