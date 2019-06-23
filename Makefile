@@ -19,3 +19,6 @@ db-start:
 db-stop:
 	docker stop $(DB_CONTAINER_NAME)
 
+db-apply:
+	./artisan migrate
+
