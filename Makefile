@@ -32,3 +32,6 @@ mail-start:
 
 mail-stop:
 	docker stop $(MAIL_CONTAINER_NAME)
+
+config:
+	./artisan config:cache
